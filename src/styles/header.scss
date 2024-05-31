@@ -1,0 +1,48 @@
+.header {
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 6rem;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 8rem;
+    display: flex;
+
+    &-link {
+      height: 2.6rem;
+      display: inline-flex;
+    }
+
+    &-img {
+
+    }
+  }
+
+  &__button {
+    width: 8rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__nav {
+    font-size: 0.875rem;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 2.25rem;
+
+    &-item {
+
+    }
+
+    &-link {
+      color: var(--grafema-text-dark) !important;
+      font-weight: 600;
+    }
+  }
+}

@@ -1,5 +1,28 @@
 module.exports = {
   hero: {
+    caption: {
+      btnText: "Discover",
+      btnDescription: "meet the new multipurpose Grafema CMS",
+      btnIcon: '<svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" fill="none"><path stroke="#2E3238" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M7.7 5.3 11.4 9l-3.7 3.8"/></svg>',
+    },
+    title: "Start building websites with Grafema",
+    description: "Create a place for your business, your interests, or anything else with the open source platform",
+    buttons: [
+      {
+        text: "Start fo free",
+        type: "primary",
+        icon: "",
+        link: "#",
+      },
+      {
+        text: "Watch features",
+        type: "outline",
+        icon: "",
+        link: "#",
+      },
+    ],
+  },
+  default: {
     alignment: "left",
     instruction: {
       iconBefore: "<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 20 20'><path fill='#2B2B2B' d='M10 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4 10.9-5.7 3.8c-.7.5-1.3.1-1.3-.7V6c0-.8.6-1.1 1.3-.7L14 9.1c.7.5.7 1.3 0 1.8Z'/></svg>",

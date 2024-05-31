@@ -1,0 +1,12 @@
+.notification {
+  display: flex;
+  align-items: center;
+  min-height: 2rem;
+  justify-content: center;
+  background-color: var(--grafema-bg-lite);
+
+  &__wrapper {
+    text-align: center;
+    font-size: 0.8125rem;
+  }
+}
