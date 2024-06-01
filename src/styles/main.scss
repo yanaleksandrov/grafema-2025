@@ -183,7 +183,7 @@ h6 {
   --grafema-multiplier: 1.1;
   font-size: calc(var(--grafema-font-ratio) * 1rem);
   line-height: 1.2em;
-  font-weight: 800;
+  font-weight: 700;
   margin: 0;
 }
 h1 {
@@ -535,4 +535,8 @@ img {
   max-width: 1240px;
   padding-inline: 2rem;
   width: 100%;
+
+  @media (max-width: 640px) {
+    padding-inline: 1.5rem;
+  }
 }
