@@ -1,0 +1,1 @@
+import rotate from './scripts/rotate';
