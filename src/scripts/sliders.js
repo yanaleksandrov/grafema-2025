@@ -1,4 +1,5 @@
 import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 
 const slidersList = [];
 const sliders     = document.querySelectorAll('.swiper');
@@ -13,6 +14,7 @@ sliders && sliders.forEach((slider, index) => {
 
     if (slider.classList.contains('themes__slider')) {
         options = {
+            modules: [Navigation, Pagination],
             centeredSlides: true,
             slidesPerView: 'auto',
             effect: 'slide',

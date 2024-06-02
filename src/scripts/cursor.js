@@ -8,6 +8,10 @@
 (function () {
     'use strict';
 
+    if (window.matchMedia('(max-width: 1024px)').matches) {
+        return;
+    }
+
     const cursor = document.createElement('div');
     cursor.id = 'cursor-dot';
 
