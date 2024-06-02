@@ -9,13 +9,13 @@ module.exports = {
     description: "Create a place for your business, your interests, or anything else with the open source platform",
     buttons: [
       {
-        text: "Start fo free",
+        text: "Download fo free",
         type: "primary",
         icon: "",
         link: "#",
       },
       {
-        text: "Watch features",
+        text: "Watch demo",
         type: "outline",
         icon: "",
         link: "#",

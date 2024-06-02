@@ -1,7 +1,7 @@
 .features {
   --grafema-features-padding: 2rem;
 
-  padding-block: 6.25rem;
+  padding-block: 3.125rem;
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -38,10 +38,10 @@
   &__items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    gap: 1rem;
+    gap: 1.5rem;
 
     @media (max-width: 991px) {
-      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
     }
   }
 
@@ -111,7 +111,7 @@
 
   &__item-text {
     padding: var(--grafema-features-padding);
-    max-width: 27rem;
+    max-width: 32rem;
     width: 100%;
   }
 

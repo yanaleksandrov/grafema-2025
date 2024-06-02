@@ -36,6 +36,13 @@
     align-items: center;
     gap: 2.25rem;
 
+    &:hover {
+
+      .header__menu-link {
+        opacity: 0.6;
+      }
+    }
+
     &-item {
 
     }
@@ -43,6 +50,12 @@
     &-link {
       color: var(--grafema-text-dark) !important;
       font-weight: 600;
+      transition: all 0.3s !important;
+      opacity: 1;
+
+      &:hover {
+        opacity: 1 !important;
+      }
     }
   }
 }

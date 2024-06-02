@@ -8,3 +8,64 @@
 @import 'styles/hero';
 @import 'styles/video';
 @import 'styles/features';
+@import 'styles/footer';
+@import 'styles/scroll-top';
+
+[data-splitting] {
+  opacity: 0;
+  --word-center: calc((var(--word-total) - 1) / 2);
+  --char-center: calc((var(--char-total) - 1) / 2);
+  --line-center: calc((var(--line-total) - 1) / 2);
+
+  .word,
+  .char {
+    display: inline-block;
+    position: relative;
+  }
+
+  .word {
+    --word-percent: calc(var(--word-index) / var(--word-total));
+    --line-percent: calc(var(--line-index) / var(--line-total));
+  }
+
+  .char {
+    --char-percent: calc(var(--char-index) / var(--char-total));
+    --char-offset: calc(var(--char-index) - var(--char-center));
+    --distance: calc((var(--char-offset) * var(--char-offset)) / var(--char-center));
+    --distance-sine: calc(var(--char-offset) / var(--char-center));
+    --distance-percent: calc((var(--distance) / var(--char-center)));
+
+    opacity: 0;
+
+    transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear;
+    transition-delay: calc(200ms * var(--char-index));
+
+    animation: slide-up 0.35s cubic-bezier(.5,.2,0,1);
+    animation-fill-mode: both;
+    animation-delay: calc(.35s + (.05s * var(--char-index)));
+
+    @keyframes slide-up {
+      from {
+        transform: translateY(8%);
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    &::before,
+    &::after {
+      content: attr(data-char);
+      position: absolute;
+      top: 0;
+      left: 0;
+      visibility: hidden;
+      transition: inherit;
+      user-select: none;
+    }
+  }
+
+  &.splitting {
+    opacity: 1;
+  }
+}
