@@ -10,7 +10,7 @@ const rotate = {
     settings: {
         cardClass: 'js-card',
         cardItemClass: 'js-card-item',
-        angle: 50,
+        angle: 40,
         animateRotate: true,
     },
     /**

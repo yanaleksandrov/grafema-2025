@@ -7,12 +7,4 @@
 
 <%= _.template(require('./sections/header.html').default)(data) %>
 
-<%= _.template(require('./sections/hero.html').default)({...data, hero}) %>
-
-<%= _.template(require('./sections/video.html').default)(data) %>
-
-<%= _.template(require('./sections/features.html').default)(data) %>
-
-<%= _.template(require('./sections/themes.html').default)(data) %>
-
 <%= _.template(require('./parts/footer.html').default)(data) %>

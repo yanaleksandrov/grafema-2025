@@ -27,6 +27,10 @@
     line-height: 110%;
     letter-spacing: -0.03em;
     grid-area: 1 / 2 / 2 / 3;
+
+    .muted {
+      color: var(--grafema-text-muted);
+    }
   }
 
   &__description {
@@ -74,7 +78,7 @@
 
       .features__item-img {
         max-width: calc(100% - 2 * var(--grafema-features-padding));
-        margin: auto auto 0;
+        margin: auto auto -1px;
         border-radius: 1rem 1rem 0 0;
       }
     }
