@@ -1,0 +1,26 @@
+.download {
+  padding-block: 9rem;
+  background-color: var(--grafema-bg-dark);
+  color: var(--grafema-text-white);
+  border-bottom: 1px solid var(--grafema-bg-universal);
+
+  &__wrapper {
+    text-align: center;
+    display: grid;
+    gap: 4rem;
+  }
+
+  &__number {
+
+    samp {
+      font-size: 6rem;
+      font-weight: 100;
+    }
+  }
+
+  &__description{
+    font-size: 1.125rem;
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+}

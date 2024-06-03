@@ -1,6 +1,9 @@
 .themes {
-  padding-block: 3rem 6rem;
+  padding-block: 6rem;
   overflow: hidden;
+  background-color: var(--grafema-bg-dark);
+  color: var(--grafema-text-white);
+  border-bottom: 1px solid var(--grafema-bg-universal);
 
   &__wrapper {
     display: grid;
@@ -14,10 +17,10 @@
   }
 
   &__title {
-    font-size: 48px;
+    font-size: 3rem;
     letter-spacing: -0.03em;
     line-height: 110%;
-    max-width: 34rem;
+    max-width: 30rem;
 
     .muted {
       color: var(--grafema-text-muted);
@@ -26,7 +29,7 @@
 
   &__description {
     font-size: 1.125rem;
-    max-width: 34rem;
+    max-width: 30rem;
   }
 
   &__slider {
@@ -50,9 +53,10 @@
 
     &-img {
       width: 100%;
+      background-color: #ffffff10;
       border-radius: 1rem;
-      border: 1px solid var(--grafema-border-color);
-      box-shadow: 0 0 0 4px #f6f6f6;
+      border: 1px solid #ffffff10;
+      box-shadow: 0 0 0 4px var(--grafema-bg-universal);
       transition: transform .2s ease;
     }
   }

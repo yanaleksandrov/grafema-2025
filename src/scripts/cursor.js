@@ -21,13 +21,12 @@
     document.body.insertAdjacentElement('afterEnd', cursor);
     document.body.insertAdjacentElement('afterEnd', ring);
 
-    let mouseX    = -100;
-    let mouseY    = -100;
-    let ringX     = -100;
-    let ringY     = -100;
-    let isHover   = false;
-    let mouseDown = false;
-    let border    = parseInt(getComputedStyle(cursor).getPropertyValue('border-left-width'));
+    let mouseX  = -100;
+    let mouseY  = -100;
+    let ringX   = -100;
+    let ringY   = -100;
+    let isHover = false;
+    let border  = parseInt(getComputedStyle(cursor).getPropertyValue('border-left-width'));
 
     const initCursor = () => {
         let root = document.getElementsByTagName('html')[0];
@@ -48,16 +47,10 @@
                 cursor.classList.remove('cursor');
             }
         };
-        window.onmousedown = () => {
-            mouseDown = true;
-        };
-        window.onmouseup = () => {
-            mouseDown = false;
-        };
+
         const trace = (a, b, n) => {
             return (1 - n) * a + n * b;
         };
-        window['trace'] = trace;
 
         const render = () => {
             ringX   = trace(ringX, mouseX, 0.5);

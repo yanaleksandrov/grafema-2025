@@ -1,4 +1,12 @@
 .header {
+  z-index: 9;
+
+  &.sticky {
+    border-bottom: 1px solid var(--grafema-border-color);
+    backdrop-filter: blur(2rem);
+    position: sticky;
+    top: 0;
+  }
 
   &__wrapper {
     display: flex;

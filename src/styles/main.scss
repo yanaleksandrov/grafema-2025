@@ -54,6 +54,7 @@ html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
   scrollbar-gutter: stable;
+  font-size: clamp(1rem, 0.3571rem + 0.7143vw, 1.5rem);
 }
 
 body {
@@ -64,7 +65,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   min-height: 100dvh;
-  font-size: 14px;
+  font-size: 0.875rem;
   overflow-x: hidden;
   font-weight: 400;
   font-style: normal;
@@ -359,7 +360,7 @@ input {
   &[type="search"] {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 15 15'%3e%3cpath stroke='%23ccced3' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 11A5 5 0 106 1a5 5 0 000 10zM14 14l-4-4'/%3e%3c/svg%3e");
     background-repeat: no-repeat;
-    background-size: 12px;
+    background-size: 0.75rem;
     background-position: 100% center;
     -webkit-background-clip: inherit;
 
@@ -532,7 +533,7 @@ img {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 1260px;
+  max-width: 79rem;
   padding-inline: 2rem;
   width: 100%;
 

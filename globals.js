@@ -9,16 +9,16 @@ module.exports = {
     description: "Create a place for your business, your interests, or anything else with the open source platform",
     buttons: [
       {
-        text: "Download fo free",
+        text: "Download For Free",
         type: "primary",
         icon: "",
-        link: "#",
+        link: "/download",
       },
       {
-        text: "Watch demo",
+        text: "Watch Demo",
         type: "outline",
         icon: "",
-        link: "#",
+        link: "https://demo.grafema.io/dashboard",
       },
     ],
   },

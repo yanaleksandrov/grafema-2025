@@ -1,0 +1,22 @@
+<% var data = {
+  title: "Home Page"
+}; %>
+<%= _.template(require('./parts/header.html').default)(data) %>
+
+<%= _.template(require('./sections/header.html').default)(data) %>
+
+<div class="download">
+  <div class="download__wrapper wrapper">
+    <div class="download__number">
+      <samp>82,227,760</samp>
+    </div>
+    <div class="download__description">
+      <p>Number of Grafema downloads. Download and install it yourself. Recommend PHP 8.1 or greater and MySQL version 5.6 or greater.</p>
+    </div>
+    <div class="download__buttons">
+      <a class="btn btn--secondary btn--lg" download>Download Grafema 1.0.0</a>
+    </div>
+  </div>
+</div>
+
+<%= _.template(require('./parts/footer.html').default)(data) %>

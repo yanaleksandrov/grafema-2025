@@ -20,7 +20,7 @@ sliders && sliders.forEach((slider, index) => {
             effect: 'slide',
             speed: 750,
             loop: true,
-            loopAdditionalSlides: 1,
+            loopAdditionalSlides: 2,
             autoplay: {
                 delay: 8000,
                 disableOnInteraction: false,
