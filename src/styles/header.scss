@@ -1,11 +1,16 @@
 .header {
   z-index: 9;
+  background-color: var(--grafema-bg-white);
+  color: var(--grafema-text-dark);
+  border-bottom: 1px solid var(--grafema-bg-universal);
 
-  &.sticky {
-    border-bottom: 1px solid var(--grafema-border-color);
-    backdrop-filter: blur(2rem);
-    position: sticky;
-    top: 0;
+  &--home {
+    border-bottom: none;
+  }
+
+  &--dark {
+    color: var(--grafema-text-white);
+    background-color: var(--grafema-bg-dark);
   }
 
   &__wrapper {
@@ -56,8 +61,8 @@
     }
 
     &-link {
-      color: var(--grafema-text-dark) !important;
-      font-weight: 600;
+      color: inherit !important;
+      font-weight: 500;
       transition: all 0.3s !important;
       opacity: 1;
 

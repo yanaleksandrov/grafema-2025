@@ -1,11 +1,14 @@
-<% var data = {
-  title: "Home Page"
-}; %>
+<%
+var data = {
+  title: "Home Page",
+  description: "Home Pages",
+  isHome: true,
+  templates: {
+    notice: _.template(require('./sections/notice.html').default)(data),
+  }
+}
+%>
 <%= _.template(require('./parts/header.html').default)(data) %>
-
-<%= _.template(require('./sections/notice.html').default)(data) %>
-
-<%= _.template(require('./sections/header.html').default)(data) %>
 
 <%= _.template(require('./sections/hero.html').default)({...data, hero}) %>
 

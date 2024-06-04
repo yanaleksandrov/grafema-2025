@@ -1,5 +1,5 @@
 .download {
-  padding-block: 9rem;
+  padding-block: 22vh;
   background-color: var(--grafema-bg-dark);
   color: var(--grafema-text-white);
   border-bottom: 1px solid var(--grafema-bg-universal);
@@ -15,6 +15,7 @@
     samp {
       font-size: 6rem;
       font-weight: 100;
+      line-height: 1;
     }
   }
 
@@ -22,5 +23,6 @@
     font-size: 1.125rem;
     max-width: 30rem;
     margin: 0 auto;
+    color: var(--grafema-text-muted);
   }
 }
