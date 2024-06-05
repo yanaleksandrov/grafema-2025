@@ -9,4 +9,13 @@ var data = {
 %>
 <%= _.template(require('./parts/header.html').default)(data) %>
 
+<div class="layout wrapper">
+  <div class="layout__side">
+    form
+  </div>
+  <div class="layout__main">
+    test layout
+  </div>
+</div>
+
 <%= _.template(require('./parts/footer.html').default)(data) %>

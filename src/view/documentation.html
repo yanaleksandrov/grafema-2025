@@ -4,47 +4,70 @@ var data = {
   description: "Home Pages",
   templates: {
     notice: _.template(require('./sections/notice.html').default)(data),
+  },
+  menus: {
+    "Начало работы": {
+      "/1": "Установка",
+      "/2": "Конфигурация",
+      "/3": "Структура каталогов",
+    },
+    "Виды данных": {
+      "/1": "Типы постов",
+      "/2": "Таксономии",
+      "/3": "Метаданные",
+      "/4": "Пользователи",
+      "/5": "Комментарии",
+    },
+    "Основы": {
+      "/1": "Маршрутизация",
+      "/2": "Сессии",
+      "/3": "База данных",
+      "/4": "Константы",
+      "/5": "REST API",
+      "/6": "Переводы и локализация",
+      "/7": "Плагины",
+      "/8": "Темы",
+      "/9": "Хуки (события)",
+      "/9": "PHP стандарты кода",
+    },
+    "Безопасность": {
+      "/1": "Валидация данных",
+      "/2": "Очистка данных",
+      "/3": "CSRF защита",
+      "/4": "SQL иньекции",
+    },
+    "Производительность": {
+      "/1": "Объектный кеш",
+      "/2": "Страничный кеш",
+      "/3": "Сжатие медиафайлов",
+    },
   }
 }
 %>
 <%= _.template(require('./parts/header.html').default)(data) %>
 
-<div class="document wrapper">
-  <div class="document__side">
-    <h1 class="document__title">Meet the X.js 🎉</h1>
-    <div class="document__description">
-      <p>A tiny & powerful JS library for creating interactive user interfaces.</p>
-      <p>
-        It offers a Vue-like declarative API and development using markup-oriented
-        code, with automatic reacts, updates, and renders the new view in real-time.
-      </p>
-    </div>
-    <nav class="document__nav">
-      <div>Examples</div>
-      <ul class="document__menu">
-        <li>
-          <a class="document__menu-link" href="/">Home page</a>
-        </li>
-        <li>
-          <a class="document__menu-link" href="/storage-usage">Storage usage</a>
-        </li>
-        <li>
-          <a class="document__menu-link" href="/to-do">To Do</a>
-        </li>
-      </ul>
-    </nav>
-    <ul class="document__links">
-      <li class="document__link">
-        <a href="https://github.com/yanaleksandrov/x.js" target="_blank">See project in <strong>GitHub</strong></a>
-      </li>
-      <li class="document__link">
-        <a href="https://github.com/yanaleksandrov/x.js" target="_blank">Download (11kB) <strong>X.js</strong></a>
-      </li>
-    </ul>
-    <div class="document__footer">This project is maintained by <a href="https://github.com/yanaleksandrov" target="_blank">Yan Aleksandrov</a></div>
+<div class="layout wrapper">
+  <div class="layout__side">
+    <% if (data.menus) { %>
+      <% Object.entries(data.menus).forEach(([title, menu]) => { %>
+        <nav class="layout__nav">
+          <div class="layout__title">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polyline points="152 224 232 56 40 56 88 104 40 152 186.29 152" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/></svg>
+            <%= title %>
+          </div>
+          <ul class="layout__menu">
+            <% Object.entries(menu).forEach(([link, text]) => { %>
+            <li class="layout__menu-item">
+              <a class="layout__menu-link" href="<%= link %>"><%= text %></a>
+            </li>
+            <% }); %>
+          </ul>
+        </nav>
+      <% }); %>
+    <% } %>
   </div>
-  <div class="document__main">
-    test document
+  <div class="layout__main">
+    test layout
   </div>
 </div>
 

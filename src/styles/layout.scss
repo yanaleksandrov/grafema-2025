@@ -1,0 +1,83 @@
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+
+  &__side {
+    flex: 1;
+    max-width: 14rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    overflow-y: auto;
+    min-height: 100%;
+    padding-block: 3rem;
+    padding-inline-end: 3rem;
+    border-inline-end: 1px solid var(--grafema-bg-universal);
+  }
+
+  &__title {
+    display: flex;
+    gap: 0.5rem;
+    font-weight: 700;
+
+    svg {
+      width: 0.875rem;
+    }
+  }
+
+  &__nav {
+    margin: 0;
+    font-size: 0.9375rem;
+  }
+
+  &__menu {
+    padding: 0 0 0 1.375rem;
+    margin: 0.4rem 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-weight: 400;
+  }
+
+  &__menu-link {
+    display: inline-flex;
+    color: var(--grafema-text-dark) !important;
+    line-height: 160%;
+    padding: 0.1rem 0;
+    transition: all .3s !important;
+    white-space: nowrap;
+    left: 0;
+    position: relative;
+
+    &:hover {
+      color: var(--grafema-text-dark) !important;
+      left: 0.35rem;
+    }
+  }
+
+  &__main {
+    flex: 1;
+    padding-block: 3rem;
+    padding-inline-start: 3rem;
+  }
+
+  @media ( max-width: 1024px ) {
+    flex-direction: column;
+    min-height: initial;
+
+    &__side {
+      height: inherit;
+      min-height: inherit;
+      padding: 0;
+      width: 100%;
+      position: initial;
+      max-width: 100%;
+      border: 0;
+      padding-inline-end: 0;
+    }
+  }
+}
