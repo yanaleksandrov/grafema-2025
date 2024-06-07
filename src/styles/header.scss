@@ -1,22 +1,13 @@
 .header {
   z-index: 9;
-  background-color: var(--grafema-bg-white);
+  position: relative;
   color: var(--grafema-text-dark);
-  border-bottom: 1px solid var(--grafema-bg-universal);
-
-  &--home {
-    border-bottom: none;
-  }
-
-  &--dark {
-    color: var(--grafema-text-white);
-    background-color: var(--grafema-bg-dark);
-  }
 
   &__wrapper {
     display: flex;
     align-items: center;
     min-height: 6rem;
+    gap: 2rem;
     justify-content: space-between;
   }
 
@@ -27,10 +18,12 @@
     &-link {
       height: 2.6rem;
       display: inline-flex;
+      align-items: center;
     }
 
     &-img {
-
+      min-width: fit-content;
+      height: 38px;
     }
   }
 

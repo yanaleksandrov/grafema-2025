@@ -11,17 +11,13 @@
     <title><%= title %></title>
   </head>
   <body>
-    <% if (typeof isHome !== 'undefined' && isHome) { %>
-      <%= _.template(templates.notice)() %>
-    <% } %>
+    <%= _.template(templates.notice)() %>
 
-    <header
-      class="header<%= typeof isDark !== 'undefined' && isDark || false ? ' header--dark' : '' %> <%= typeof isHome !== 'undefined' && isHome ? ' header--home' : '' %>"
-    >
+    <header class="header">
       <div class="header__wrapper wrapper">
         <div class="header__logo">
           <a class="header__logo-link" href="/">
-            <img class="header__logo-img" src="/images/logo.svg" alt="Grafema CMS">
+            <img class="header__logo-img" src="/images/logo-full.svg" alt="Grafema CMS">
           </a>
         </div>
         <nav class="header__nav">
@@ -44,7 +40,7 @@
           </ul>
         </nav>
         <div class="header__button">
-          <a class="btn btn--secondary btn--sm" href="#">Get Grafema</a>
+          <a class="btn btn--secondary btn--xs" href="#">Get Grafema</a>
         </div>
       </div>
     </header>

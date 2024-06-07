@@ -9,7 +9,7 @@ module.exports = {
     description: "Create a place for your business, your interests, or anything else with the open source platform",
     buttons: [
       {
-        text: "Download For Free",
+        text: "Free Download",
         type: "primary",
         icon: "",
         link: "/download",

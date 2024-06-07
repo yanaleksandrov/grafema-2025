@@ -1,5 +1,6 @@
 .video {
   position: relative;
+  overflow: hidden;
 
   &__wrapper,
   &__browser {

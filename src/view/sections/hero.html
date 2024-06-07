@@ -73,7 +73,12 @@
         </svg>
       </div>
       <a class="hero__caption-link" href="#">
-        <span class="hero__caption-btn"><%= hero.caption.btnText %></span> <%= hero.caption.btnDescription || '' %>
+        <% if (hero.caption.btnText) { %>
+        <span class="hero__caption-btn"><%= hero.caption.btnText %></span>
+        <% } %>
+
+        <%= hero.caption.btnDescription || '' %>
+
         <% if (hero.caption.btnIcon) { %>
         <span class="hero__caption-icon"><%= hero.caption.btnIcon %></span>
         <% } %>

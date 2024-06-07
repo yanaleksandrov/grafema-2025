@@ -533,8 +533,7 @@ img {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 81rem;
-  padding-inline: 2rem;
+  padding-inline: max(2rem, calc(50% - 40rem));
   width: 100%;
 
   @media (max-width: 640px) {
