@@ -9,7 +9,7 @@
 
   &__side {
     flex: 1;
-    max-width: 15rem;
+    max-width: 14rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -108,16 +108,6 @@
     outline: 1px solid var(--grafema-border-color);
     outline-offset: 0.4rem;
     overflow: hidden;
-
-    &:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 6rem;
-      background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
-    }
 
     &:hover {
 

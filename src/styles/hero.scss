@@ -6,8 +6,9 @@
 		align-items: center;
 		gap: 2.6rem;
 		padding-block: 12vh 6vh;
-		min-height: 72.5vh;
 		margin: auto 0;
+		max-height: 50rem;
+		height: 72.5vh;
 	}
 
 	&__caption {
@@ -35,6 +36,7 @@
 			gap: 0.5rem;
 			align-items: center;
 			position: relative;
+			text-align: center;
 		}
 
 		&-btn {
@@ -61,6 +63,7 @@
 		letter-spacing: -0.03em;
 		max-width: 64rem;
 		margin: 0 auto -0.15em;
+		font-size: min(5.65rem, clamp(3rem, 2rem + 4.36vw, 5.65rem));
 	}
 
 	&__description {
