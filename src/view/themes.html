@@ -4,7 +4,29 @@ var data = {
   description: "Home Pages",
   templates: {
     notice: _.template(require('./sections/notice.html').default)(data),
-  }
+  },
+  themes: [
+    {
+      "title": "Smarto",
+      "image": "/images/demo-vr-club.jpg",
+      "description": "Multipurpose theme for business, startup & new companies",
+    },
+    {
+      "title": "Agency Pro",
+      "image": "/images/demo-agency.jpg",
+      "description": "Multipurpose theme for business, startup & new companies",
+    },
+    {
+      "title": "Agro",
+      "image": "/images/demo-agro.jpg",
+      "description": "Multipurpose theme for business, startup & new companies",
+    },
+    {
+      "title": "Education",
+      "image": "/images/demo-education.webp",
+      "description": "Multipurpose theme for business, startup & new companies",
+    },
+  ],
 }
 %>
 <%= _.template(require('./parts/header.html').default)(data) %>
@@ -14,7 +36,23 @@ var data = {
     form
   </div>
   <div class="layout__main">
-    test layout
+    <ul class="layout__themes">
+      <% data.themes.forEach(theme => { %>
+      <li class="layout__themes-item">
+        <a class="layout__themes-link" href="#">
+          <div class="layout__themes-picture js-cursor-arrow">
+            <img class="layout__themes-image" src="<%= theme.image %>" alt="" width="300" height="200">
+          </div>
+          <div class="layout__themes-title">
+            <%= theme.title %>
+          </div>
+          <div class="layout__themes-description">
+            <%= theme.description %>
+          </div>
+        </a>
+      </li>
+      <% }); %>
+    </ul>
   </div>
 </div>
 
