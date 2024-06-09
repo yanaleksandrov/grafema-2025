@@ -8,7 +8,7 @@
   &__wrapper {
     display: grid;
     gap: 4rem;
-    max-width: 56rem;
+    padding-inline: max(2rem, 50% - 28rem);
   }
 
   &__header {
@@ -17,7 +17,7 @@
   }
 
   &__title {
-    font-size: 3rem;
+    font-size: clamp(2.5rem, 2.3333rem + 0.7407vw, 3rem);
     letter-spacing: -0.03em;
     line-height: 110%;
     max-width: 30rem;

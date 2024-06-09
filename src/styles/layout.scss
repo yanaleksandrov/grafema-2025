@@ -129,6 +129,14 @@
     font-weight: 500;
     line-height: 1;
     margin-top: 0.35rem;
+    padding-inline: 0.4rem;
+  }
+
+  &__themes-content {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-inline: 0.4rem;
   }
 
   &__themes-description {
