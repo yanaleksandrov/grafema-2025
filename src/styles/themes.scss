@@ -4,12 +4,9 @@
   background-color: var(--grafema-bg-dark);
   color: var(--grafema-text-white);
   border-bottom: 1px solid var(--grafema-bg-universal);
-
-  &__wrapper {
-    display: grid;
-    gap: 4rem;
-    padding-inline: max(2rem, 50% - 28rem);
-  }
+  display: grid;
+  gap: 4rem;
+  padding-inline: max(2rem, 50% - 28rem);
 
   &__header {
     display: grid;
@@ -18,7 +15,6 @@
 
   &__title {
     font-size: clamp(2.5rem, 2.3333rem + 0.7407vw, 3rem);
-    letter-spacing: -0.03em;
     line-height: 110%;
     max-width: 30rem;
 

@@ -1,3 +1,4 @@
+import './scripts/menu';
 import './scripts/cursor';
 import './scripts/rotate';
 import './scripts/sliders';

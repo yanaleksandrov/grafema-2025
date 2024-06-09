@@ -7,40 +7,41 @@
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap">
     <title><%= title %></title>
   </head>
   <body>
     <%= _.template(templates.notice)() %>
 
-    <header class="header">
-      <div class="header__wrapper wrapper">
-        <div class="header__logo">
-          <a class="header__logo-link" href="/">
-            <img class="header__logo-img" src="/images/logo-full.svg" alt="Grafema CMS">
-          </a>
-        </div>
-        <nav class="header__nav">
-          <ul class="header__menu">
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="/themes">Themes</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="/plugins">Plugins</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="/about">About</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="/download">Download</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="/documentation">Documentation</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__button">
-          <a class="btn btn--secondary btn--xs" href="#">Get Grafema</a>
-        </div>
+    <header class="header wrapper">
+      <div class="header__logo">
+        <a class="header__logo-link" href="/">
+          <img class="header__logo-img" src="/images/logo-full.svg" alt="Grafema CMS">
+        </a>
+      </div>
+      <nav class="header__nav" data-js-menu>
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="/themes">Темы</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="/plugins">Плагины</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="/about">Возможности</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="/download">Скачать</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="/documentation">Документация</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__button">
+        <a class="btn btn--secondary btn--xs" href="#">Get Grafema</a>
+      </div>
+      <div class="header__btn" data-js-burger>
+        <i class="header__btn-icon"></i>
       </div>
     </header>

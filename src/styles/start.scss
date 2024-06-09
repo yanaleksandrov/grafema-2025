@@ -3,11 +3,8 @@
   color: var(--grafema-text-white);
   padding-block: 6rem 0;
   overflow: hidden;
-
-  &__wrapper {
-    display: grid;
-    gap: 2rem;
-  }
+  display: grid;
+  gap: 2rem;
 
   &__description {
     max-width: 31rem;

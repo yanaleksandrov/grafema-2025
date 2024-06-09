@@ -1,105 +1,103 @@
-<section class="hero">
-  <div class="hero__wrapper wrapper">
-    <% if (hero.caption) { %>
-    <div class="hero__caption">
-      <div class="hero__caption-bg">
-        <svg xmlns="http://www.w3.org/2000/svg" width="412" height="267" fill="none">
-          <path stroke="url(#a)" stroke-opacity=".1" d="M158 267V0"/>
-          <path stroke="url(#b)" stroke-opacity=".1" d="M110 267V0"/>
-          <path stroke="url(#c)" stroke-opacity=".1" d="M206 267V0"/>
-          <path stroke="url(#d)" stroke-opacity=".1" d="M254 267V0"/>
-          <path stroke="url(#e)" stroke-opacity=".1" d="M302 267V0"/>
-          <path stroke="url(#f)" stroke-opacity=".1" d="M0 205h411"/>
-          <path stroke="url(#g)" stroke-opacity=".1" d="M41 157h330"/>
-          <path stroke="url(#h)" stroke-opacity=".1" d="M60 109h291"/>
-          <path stroke="url(#i)" stroke-opacity=".1" d="M87 61h236"/>
-          <path fill="#fff" stroke="#E6E6E6" d="M299 106h6v6h-6zM155 58h6v6h-6zM251 202h6v6h-6z"/>
-          <defs>
-            <linearGradient id="a" x1="158.5" x2="158.5" y1="0" y2="267" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#666" stop-opacity="0"/>
-              <stop offset=".2"/>
-              <stop offset=".9"/>
-              <stop offset="1" stop-color="#666" stop-opacity="0"/>
-            </linearGradient>
-            <linearGradient id="b" x1="110.5" x2="110.5" y1="0" y2="267" gradientUnits="userSpaceOnUse">
-              <stop offset=".1" stop-color="#666" stop-opacity="0"/>
-              <stop offset=".3"/>
-              <stop offset=".8"/>
-              <stop offset="1" stop-color="#666" stop-opacity="0"/>
-            </linearGradient>
-            <linearGradient id="c" x1="206.5" x2="206.5" y1="0" y2="267" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#666" stop-opacity="0"/>
-              <stop offset="0"/>
-              <stop offset="1"/>
-              <stop offset="1" stop-color="#666" stop-opacity="0"/>
-            </linearGradient>
-            <linearGradient id="d" x1="254.5" x2="254.5" y1="0" y2="267" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#666" stop-opacity="0"/>
-              <stop offset=".2"/>
-              <stop offset=".9"/>
-              <stop offset="1" stop-color="#666" stop-opacity="0"/>
-            </linearGradient>
-            <linearGradient id="e" x1="302.5" x2="302.5" y1="0" y2="267" gradientUnits="userSpaceOnUse">
-              <stop offset=".1" stop-color="#666" stop-opacity="0"/>
-              <stop offset=".3"/>
-              <stop offset=".8"/>
-              <stop offset="1" stop-color="#666" stop-opacity="0"/>
-            </linearGradient>
-            <linearGradient id="f" x1="411.2" x2="0" y1="205.5" y2="205.5" gradientUnits="userSpaceOnUse">
-              <stop offset=".1" stop-color="#666" stop-opacity="0"/>
-              <stop offset=".3"/>
-              <stop offset=".7"/>
-              <stop offset=".9" stop-color="#666" stop-opacity="0"/>
-            </linearGradient>
-            <linearGradient id="g" x1="371.3" x2="41.1" y1="157.5" y2="157.5" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#666" stop-opacity="0"/>
-              <stop offset=".1"/>
-              <stop offset=".9"/>
-              <stop offset="1" stop-color="#666" stop-opacity="0"/>
-            </linearGradient>
-            <linearGradient id="h" x1="351.2" x2="60" y1="109.5" y2="109.5" gradientUnits="userSpaceOnUse">
-              <stop offset=".1" stop-color="#666" stop-opacity="0"/>
-              <stop offset=".3"/>
-              <stop offset=".7"/>
-              <stop offset=".9" stop-color="#666" stop-opacity="0"/>
-            </linearGradient>
-            <linearGradient id="i" x1="322.7" x2="87" y1="61.5" y2="61.5" gradientUnits="userSpaceOnUse">
-              <stop offset=".1" stop-color="#666" stop-opacity="0"/>
-              <stop offset=".3"/>
-              <stop offset=".7"/>
-              <stop offset=".9" stop-color="#666" stop-opacity="0"/>
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
-      <a class="hero__caption-link" href="#">
-        <% if (hero.caption.btnText) { %>
-        <span class="hero__caption-btn"><%= hero.caption.btnText %></span>
-        <% } %>
-
-        <%= hero.caption.btnDescription || '' %>
-
-        <% if (hero.caption.btnIcon) { %>
-        <span class="hero__caption-icon"><%= hero.caption.btnIcon %></span>
-        <% } %>
-      </a>
+<section class="hero wrapper">
+  <% if (hero.caption) { %>
+  <div class="hero__caption">
+    <div class="hero__caption-bg">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 412 267" width="412" height="267" fill="none">
+        <path stroke="url(#a)" stroke-opacity=".1" d="M158 267V0"/>
+        <path stroke="url(#b)" stroke-opacity=".1" d="M110 267V0"/>
+        <path stroke="url(#c)" stroke-opacity=".1" d="M206 267V0"/>
+        <path stroke="url(#d)" stroke-opacity=".1" d="M254 267V0"/>
+        <path stroke="url(#e)" stroke-opacity=".1" d="M302 267V0"/>
+        <path stroke="url(#f)" stroke-opacity=".1" d="M0 205h411"/>
+        <path stroke="url(#g)" stroke-opacity=".1" d="M41 157h330"/>
+        <path stroke="url(#h)" stroke-opacity=".1" d="M60 109h291"/>
+        <path stroke="url(#i)" stroke-opacity=".1" d="M87 61h236"/>
+        <path fill="#fff" stroke="#E6E6E6" d="M299 106h6v6h-6zM155 58h6v6h-6zM251 202h6v6h-6z"/>
+        <defs>
+          <linearGradient id="a" x1="158.5" x2="158.5" y1="0" y2="267" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#666" stop-opacity="0"/>
+            <stop offset=".2"/>
+            <stop offset=".9"/>
+            <stop offset="1" stop-color="#666" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="b" x1="110.5" x2="110.5" y1="0" y2="267" gradientUnits="userSpaceOnUse">
+            <stop offset=".1" stop-color="#666" stop-opacity="0"/>
+            <stop offset=".3"/>
+            <stop offset=".8"/>
+            <stop offset="1" stop-color="#666" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="c" x1="206.5" x2="206.5" y1="0" y2="267" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#666" stop-opacity="0"/>
+            <stop offset="0"/>
+            <stop offset="1"/>
+            <stop offset="1" stop-color="#666" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="d" x1="254.5" x2="254.5" y1="0" y2="267" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#666" stop-opacity="0"/>
+            <stop offset=".2"/>
+            <stop offset=".9"/>
+            <stop offset="1" stop-color="#666" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="e" x1="302.5" x2="302.5" y1="0" y2="267" gradientUnits="userSpaceOnUse">
+            <stop offset=".1" stop-color="#666" stop-opacity="0"/>
+            <stop offset=".3"/>
+            <stop offset=".8"/>
+            <stop offset="1" stop-color="#666" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="f" x1="411.2" x2="0" y1="205.5" y2="205.5" gradientUnits="userSpaceOnUse">
+            <stop offset=".1" stop-color="#666" stop-opacity="0"/>
+            <stop offset=".3"/>
+            <stop offset=".7"/>
+            <stop offset=".9" stop-color="#666" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="g" x1="371.3" x2="41.1" y1="157.5" y2="157.5" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#666" stop-opacity="0"/>
+            <stop offset=".1"/>
+            <stop offset=".9"/>
+            <stop offset="1" stop-color="#666" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="h" x1="351.2" x2="60" y1="109.5" y2="109.5" gradientUnits="userSpaceOnUse">
+            <stop offset=".1" stop-color="#666" stop-opacity="0"/>
+            <stop offset=".3"/>
+            <stop offset=".7"/>
+            <stop offset=".9" stop-color="#666" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="i" x1="322.7" x2="87" y1="61.5" y2="61.5" gradientUnits="userSpaceOnUse">
+            <stop offset=".1" stop-color="#666" stop-opacity="0"/>
+            <stop offset=".3"/>
+            <stop offset=".7"/>
+            <stop offset=".9" stop-color="#666" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+      </svg>
     </div>
-    <% } %>
+    <a class="hero__caption-link" href="#">
+      <% if (hero.caption.btnText) { %>
+      <span class="hero__caption-btn"><%= hero.caption.btnText %></span>
+      <% } %>
 
-    <% if (hero.title) { %>
-    <h1 class="hero__title" data-splitting><%= hero.title %></h1>
-    <% } %>
+      <%= hero.caption.btnDescription || '' %>
 
-    <% if (hero.description) { %>
-    <div class="hero__description"><%= hero.description %></div>
-    <% } %>
-
-    <% if (hero.buttons) { %>
-    <div class="hero__buttons">
-      <% hero.buttons.forEach( button => { %>
-      <a href="<%= button.link %>" class="btn btn--<%= button.type %>"><%= button.text + button.icon %></a>
-      <% }); %>
-    </div>
-    <% } %>
+      <% if (hero.caption.btnIcon) { %>
+      <span class="hero__caption-icon"><%= hero.caption.btnIcon %></span>
+      <% } %>
+    </a>
   </div>
+  <% } %>
+
+  <% if (hero.title) { %>
+  <h1 class="hero__title" data-splitting><%= hero.title %></h1>
+  <% } %>
+
+  <% if (hero.description) { %>
+  <div class="hero__description"><%= hero.description %></div>
+  <% } %>
+
+  <% if (hero.buttons) { %>
+  <div class="hero__buttons">
+    <% hero.buttons.forEach( button => { %>
+    <a href="<%= button.link %>" class="btn btn--<%= button.type %>"><%= button.text + button.icon %></a>
+    <% }); %>
+  </div>
+  <% } %>
 </section>

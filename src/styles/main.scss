@@ -65,11 +65,13 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   min-height: 100dvh;
-  font-size: 0.875rem;
+  font-size: #{calc(16 / 16)}rem;
   overflow-x: hidden;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   color: #151515;
+  font-optical-sizing: auto;
+  font-variation-settings: "slnt" 0, "CRSV" 0, "SHRP" 0;
 
   &::-webkit-scrollbar-thumb {
     background-color: hsla(216, 3%, 64%, 0.6);
@@ -184,7 +186,8 @@ h6 {
   --grafema-multiplier: 1.1;
   font-size: calc(var(--grafema-font-ratio) * 1rem);
   line-height: 1.2em;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: -0.04em;
   margin: 0;
 }
 h1 {

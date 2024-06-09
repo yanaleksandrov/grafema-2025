@@ -5,8 +5,8 @@ module.exports = {
       btnDescription: "meet the new multipurpose Grafema CMS",
       btnIcon: '<svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" fill="none"><path stroke="#2E3238" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M7.7 5.3 11.4 9l-3.7 3.8"/></svg>',
     },
-    title: "Start building websites with Grafema",
-    description: "Create a place for your business, your interests, or anything else with the open source platform",
+    title: "Создавайте сайты вместе с Grafema CMS",
+    description: "Многоцелевая платформа с открытым исходным кодом для разработки веб сайтов и приложений.",
     buttons: [
       {
         text: "Free Download",

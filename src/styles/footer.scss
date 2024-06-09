@@ -4,6 +4,7 @@
   display: grid;
   gap: 5rem;
   padding-block: 6rem;
+  font-size: 0.925rem;
 
   &__wrapper {
     display: flex;
@@ -31,10 +32,11 @@
   }
 
   &__menu {
-    font-size: 1.25rem;
-    font-weight: 200;
     display: flex;
     flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 100;
+    gap: 0.225rem;
 
     &-item {
 
