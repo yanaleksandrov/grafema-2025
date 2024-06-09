@@ -59,18 +59,18 @@ html {
 
 body {
   line-height: 1.4;
-  font-family: var(--grafema-font-text);
   font-feature-settings: "liga" 0;
   touch-action: manipulation;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   min-height: 100dvh;
-  font-size: #{calc(16 / 16)}rem;
   overflow-x: hidden;
-  font-weight: 300;
   font-style: normal;
   color: #151515;
+  font-size: #{calc(16 / 16)}rem;
+  font-family: var(--grafema-font-text);
   font-optical-sizing: auto;
+  font-weight: 300;
   font-variation-settings: "slnt" 0, "CRSV" 0, "SHRP" 0;
 
   &::-webkit-scrollbar-thumb {
