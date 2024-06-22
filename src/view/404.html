@@ -1,3 +1,12 @@
+<%
+var data = {
+  title: "Home Page",
+  description: "Home Pages",
+  templates: {
+    notice: _.template(require('./blocks/notice.html').default)(data),
+  },
+}
+%>
 <%= _.template(require('./blocks/header.html').default)(data) %>
 
 <section class="error-404">
