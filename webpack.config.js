@@ -26,6 +26,24 @@ const generateHtmlPlugin = dir => {
   }, []);
 }
 
+const generateBlocks = dir => {
+  const files = fs.readdirSync(path.resolve(__dirname, dir));
+
+  return files.reduce((acc, file) => {
+    const [name, extension] = file.split('.');
+    if (extension) {
+      acc.push(new HtmlWebpackPlugin({
+        filename: `blocks/${name}.php`,
+        template: path.resolve(__dirname, `${dir}/${name}.${extension}`),
+        inject: false,
+        templateParameters: globals,
+        minify: false,
+      }));
+    }
+    return acc;
+  }, []);
+}
+
 module.exports = {
   entry: [
     './src/index.js',
@@ -116,12 +134,7 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        include: path.resolve(__dirname, 'src/view/parts'),
-        use: ['raw-loader'],
-      },
-      {
-        test: /\.html$/,
-        include: path.resolve(__dirname, 'src/view/sections'),
+        include: path.resolve(__dirname, 'src/view/blocks'),
         use: ['raw-loader'],
       },
     ],
@@ -145,9 +158,15 @@ module.exports = {
           to: 'images',
           noErrorOnMissing: true,
         },
+        {
+          from: 'src/view/blocks',
+          to: '../grafema-2025/blocks/[name].php',
+          noErrorOnMissing: true,
+        },
       ],
     }),
   ].concat(
-    generateHtmlPlugin('src/view')
+    generateHtmlPlugin('src/view'),
+    generateBlocks('src/view/blocks')
   ),
 }

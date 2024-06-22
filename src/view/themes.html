@@ -3,7 +3,7 @@ var data = {
   title: "Home Page",
   description: "Home Pages",
   templates: {
-    notice: _.template(require('./sections/notice.html').default)(data),
+    notice: _.template(require('./blocks/notice.html').default)(data),
   },
   themes: [
     {
@@ -44,7 +44,7 @@ var data = {
   ],
 }
 %>
-<%= _.template(require('./parts/header.html').default)(data) %>
+<%= _.template(require('./blocks/header.html').default)(data) %>
 
 <div class="layout wrapper">
   <div class="layout__side">
@@ -74,4 +74,4 @@ var data = {
   </div>
 </div>
 
-<%= _.template(require('./parts/footer.html').default)(data) %>
+<%= _.template(require('./blocks/footer.html').default)(data) %>

@@ -3,7 +3,7 @@ var data = {
   title: "Home Page",
   description: "Home Pages",
   templates: {
-    notice: _.template(require('./sections/notice.html').default)(data),
+    notice: _.template(require('./blocks/notice.html').default)(data),
   },
   hero: {
     caption: {
@@ -30,6 +30,6 @@ var data = {
   }
 }
 %>
-<%= _.template(require('./parts/header.html').default)(data) %>
+<%= _.template(require('./blocks/header.html').default)(data) %>
 
-<%= _.template(require('./sections/hero.html').default)(data) %>
+<%= _.template(require('./blocks/hero.html').default)(data) %>
