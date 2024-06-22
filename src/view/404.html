@@ -1,35 +1,3 @@
-<%
-var data = {
-  title: "Home Page",
-  description: "Home Pages",
-  templates: {
-    notice: _.template(require('./blocks/notice.html').default)(data),
-  },
-  hero: {
-    caption: {
-      btnText: "Grafema CMS",
-      btnDescription: "total downloads from 13 December 2024",
-      btnIcon: '<svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" fill="none"><path stroke="#2E3238" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M7.7 5.3 11.4 9l-3.7 3.8"/></svg>',
-    },
-    title: "1,227,122",
-    description: "Download and install it yourself. Recommend PHP 8.1 or greater and MySQL version 5.6 or greater.",
-    buttons: [
-      {
-        text: "Download Grafema 1.0.0",
-        type: "primary btn--lg",
-        icon: "",
-        link: "/download",
-      },
-      {
-        text: "Installation Guide",
-        type: "outline btn--lg",
-        icon: "",
-        link: "https://demo.grafema.io/dashboard",
-      },
-    ],
-  }
-}
-%>
 <%= _.template(require('./blocks/header.html').default)(data) %>
 
 <section class="error-404">
